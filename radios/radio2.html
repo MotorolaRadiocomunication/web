@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motorola Radiocomunication</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+    </style>
+</head>
+<body>
+
+    <div class="help-box" id="helpBox">
+        <span class="close-btn" onclick="closeHelpBox()">×</span>
+        <p>¿Necesitas ayuda? No dudes en mandar correo. ¡Espero poder ayudarte!</p>
+        <button onclick="redirectToContacts()">Contactar por email</button>
+    </div>
+
+    <div class="notification" id="notification" onclick="showHelpBox()">
+        <span class="notification-icon">📧</span>
+    </div>
+    <!-- BARRA PRINCIPAL INFORMACION CONTACTO -->
+    <header>
+        <div class="logo">
+            <img src="Motorola Logo.png" alt="Logo">
+        </div>
+        <div class="menu-icon" id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="mailto:renedejesusrangel228@gmail.com">Tafolla@incomxe.com.mx <i class="fa-solid fa-envelope" style="color: #000000;"></i></a></li>
+                <li><a href="tel:464-133-7574">464-648-1628 <i class="fa-solid fa-phone" style="color: #000000;"></i></a></li>
+                <li><a href="https://wa.me/524641337574">464-651-6344 <i class="fa-brands fa-whatsapp" style="color: #000000;"></i></a></li>
+    
+                <li class="hide-in-secondary"><a href="../../index.html">Menú</a></li>
+    
+                <li class="menu-item-has-children hide-in-secondary">
+                    <a href="#" id="Nosotros-link">Nosotros <i class="fa-solid fa-chevron-down" id="toggle-submenu"></i></a>
+                    <ul class="submenu">    
+                        <li><a href="../../nosotros/index.html">Quienes somos</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children hide-in-secondary">
+                    <a href="#" id="support-link">Support <i class="fa-solid fa-chevron-down" id="toggle-support-submenu"></i></a>
+                    <ul class="submenu">    
+                        <li><a href="#support-box">¿Necesitas ayuda?</a>
+                            <a href="mailto:carlosdanielconejo2@gmail.com">support@gmail.com</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="hide-in-secondary"><a href="https://www.google.com/maps/place/C. Pasajero 620, Centro, 36700 Salamanca, Gto.">Salamanca Guanajuato, Pasajero #620 Col. Centro. C.P. 36700 <i class="fa-solid fa-location-dot" style="color: #000000;"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <!-- BARRA SECUNDARIA INFORMACION CONTACTO -->
+    <header class="secondary-header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="../../index.html">Menú</a></li>
+                <li><a href="../../nosotros/index.html">Nosotros</a></li>
+                <li><a href="#" class="support-link" id="support-link">Support</a></li>
+                <li><a href="https://www.google.com/maps/place/C. Pasajero 620, Centro, 36700 Salamanca, Gto.">Salamanca Guanajuato, Pasajero #620 Col. Centro. C.P. 36700 <i class="fa-solid fa-location-dot" style="color: #000000;"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="support-box" class="support-box">
+        <div class="close-btn" id="close-support">X</div>
+        <h3>¿Necesitas ayuda?</h3>
+        <p>Estamos aquí para asistirte. Contacta con nuestro equipo de soporte para obtener ayuda.</p>
+        <p><strong>Contacto:</strong> <a href="mailto:support@example.com">support@example.com</a></p>
+    </div>
+
+
+    <!-- BARRA TERCERA -->
+    <header class="third-header">
+        <nav class="navbar">
+            <ul>
+                <li class="mototrbo"><a href="#">Radio Móvil P25 APX 8500</a></li>
+                <li class="details-product"><a href="#">Detalles Producto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- BARRA DE NAVEGACION (BREADCRUMB) -->
+    <div class="breadcrumb">
+        <ul>
+            <li><a href="../../index.html">Inicio</a></li>
+            <li><a href="../../index.html#productos">Productos</a></li>
+            <li><a href="../index.html"">Radios Portatiles</a></li>
+            <li id="breadcrumb-radio-name">Radio Móvil P25 APX 8500</li>
+        </ul>
+    </div>
+
+
+    <div id="MOTOTRBO R2">
+    <div class="thumbnail-container">
+        <img class="thumbnail" src="Radio Móvil P25 APX 8500/APX 8500.png" alt="Imagen 1" onclick="changeImage('Radio Móvil P25 APX 8500/APX 8500.png', 'Título de la Imagen 1', 'Resumen de la Imagen 1')">
+        <img class="thumbnail" src="Radio Móvil P25 APX 8500/APX 8500(2).png" alt="Imagen 1" onclick="changeImage('Radio Móvil P25 APX 8500/APX 8500(2).png', 'Título de la Imagen 1', 'Resumen de la Imagen 1')">
+        <img class="thumbnail" src="Radio Móvil P25 APX 8500/APX 8500(3).png" alt="Imagen 2" onclick="changeImage('Radio Móvil P25 APX 8500/APX  8500(3).png', 'Título de la Imagen 2', 'Resumen de la Imagen 2')">
+        <img class="thumbnail" src="Radio Móvil P25 APX 8500/APX 8500(4).png" alt="Imagen 3" onclick="changeImage('Radio Móvil P25 APX 8500/APX 8500(4).png', 'Título de la Imagen 3', 'Resumen de la Imagen 3')">
+    </div>
+
+    <!-- Imagen grande -->
+     <div class="main-container">
+    <div class="main-image" id="mainImageContainer">
+        <div class="zoom-container"> <!-- Asegúrate de que el contenedor de zoom envuelve la imagen grande y el cuadro de zoom -->
+            <img id="largeImage" src="Radio Móvil P25 APX 8500/APX 8500.png" alt="Imagen Grande">
+            <div class="zoom-box"></div>
+        </div>
+        <div class="image-details">
+            <h2>Radio Móvil P25 APX 8500 para todas las bandas</h2>
+            <p>Eficiente para el personal de respuesta en situaciones de emergencia, como persecuciones a alta velocidad, accidentes de tráfico masivos y desastres naturales. Se presenta el radio móvil APX 8500, que ofrece interoperabilidad en todas las bandas, conectividad Wi-Fi segura y un diseño que facilita su instalación y desinstalación. Este radio se puede conectar al módem vehicular VML750 LTE a través de una interfaz micro USB, permitiendo el uso de la red de banda ancha para descargar aplicaciones de datos en el campo. Además, el modelo APX 8500 HP (High Power) proporciona hasta 100W de potencia de transmisión, ideal para comandantes de incidentes que necesitan coordinar varios equipos en diferentes bandas de frecuencia, especialmente en áreas sin infraestructura de red.</p>
+            <button id="buyButton">Comprar</button>
+            <hr class="separator">
+            
+            <div class="parent-container">
+                <div class="info-buttons-container">
+                    <nav class="navbarr">
+                        <div class="menu-item">
+                            <button class="dropdown-btn">PDF Y VIDEO <i class="fa-solid fa-chevron-down"></i></button>
+                            <div class="dropdown-content">
+                                <div class="dropdown-left">
+                                    <div class="dropdown-header"></div>
+                                    <p>DESCUBRE LOS MANUALES PARA OBTENER MUCHA MAS INFORMACIÓN</p>
+                                </div>
+                                <div class="dropdown-right">
+                                    <div class="dropdown-section">
+                                        <div class="dropdown-header">DATASHEET</div>
+                                        <p><a href="Radio Móvil P25 APX 8500/motl_apx8500_ds_es.pdf
+                                            " target="_blank">DATASHEET</a> <span>(Dar clic)</span></p>
+                                    </div>
+                                    <div class="dropdown-right">
+                                        <div class="dropdown-section">
+                                            <div class="dropdown-header">VIDEO</div>
+                                            <p><a href="" id="videoLink">DISPONIBLE PRONTO</a> <span>(Dar clic)</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="info-buttons-container">
+                    <nav class="navbarr">
+                        <div class="menu-item second-menu">
+                            <button class="dropdown-btn">CARACTERISTICAS <i class="fa-solid fa-chevron-down"></i></button>
+                            <div class="dropdown-content">
+                                <div class="dropdown-left">
+                                    <div class="dropdown-header"></div>
+                                    <p>
+                                        APROPIADO PARA LA MISIÓN
+
+La iluminación inteligente utiliza tres simples colores para alertar a los usuarios de los eventos críticos del radio como emergencia, batería baja, estado fuera del rango, avisos y llamadas privadas.
+
+El anuncio por voz proporciona una confirmación audible de las selecciones de zona/canal y diversas funciones como el rastreo, el modo directo, emergencia, encriptación y bloqueo de controles.
+
+Instalación sencilla: diseño de montaje en tablero simplificado para una instalación rápida y fácil.</p>
+                                </div>
+                                <div class="dropdown-right">
+                                    <div class="dropdown-section">
+                                        <div class="dropdown-header">WI-FI INTEGRADA Y CONECTIVIDAD DE DATOS</div>
+                                        <p>Actualice software eficientemente sin interrumpir comunicaciones de voz.<br> Hasta 20 redes Wi-Fi se pueden aprovisionar.<br> Usuarios reciben actualizaciones sin problemas en cualquier lugar.</p>
+                                    </div>
+                                    <div class="dropdown-section">
+                                        <div class="dropdown-header">Capacity Plus</div>
+                                        <p>Diferentes algoritmos de encriptación de hardware como AES,<br> DES, ADP con hasta 128 claves de forma que la información<br>confidencial permanece protegida de escáneres. </p>
+                                    </div>
+                                    <div class="dropdown-section">
+                                        <div class="dropdown-header">Modo dual analógico / digital</div>
+                                        <p>Modos y protocolos incluyen: QCII y MDC-1200 analógico, P25<br> digital, convencional o troncalizado, Smartnet/SmartZone,seguro o abierto.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="videoModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <video controls>
+            <source src="ruta-al-video.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+        </video>
+    </div>
+</div>
+
+
+    <!-- Cuadro flotante para cómo comprar -->
+<div class="popup" id="buyPopup">
+    <div class="popup-content">
+        <span class="close-popup" onclick="closePopup()">×</span>
+        <h2>COMO COMPRAR</h2>
+        <p>COMUNICATE CON NOSOTROS</p>
+        <div class="contact">
+            <img src="icono cel.png" alt="Teléfono" class="icon">
+            <p><a href="tel:464-133-7574">Contacto: 123-456-7890</a></p>
+        </div>
+        <div class="contact">
+            <img src="icono email.png" alt="Correo" class="icon">
+            <p><a href="mailto:renedejesusrangel228@gmail.com">Contacto: example@example.com</a></p>
+        </div>
+    </div>
+</div>
+
+
+<!-- RECUADRO FINAL  -->
+
+  
+
+<footer class="footer-distributed" id="contac">
+   
+    
+    <div class="footer-left">
+
+      <h3>Motorola<span>Radiocomunication</span></h3>
+
+      <p class="footer-links">
+        <a href="index.html" class="link-1">Home</a>
+      
+        <a href="index.html#productos">Productos</a>
+      
+        <a href="RADIOS PORTATILES/index.html">Radios portatiles</a>
+        
+        <a href="RADIOS MOVILES/index.html">Radios Moviles</a>
+        
+        <a href="Contact/index.html">Contact</a>
+      </p>
+
+      <p class="footer-company-name">Company Carlos & Rangel Global Services © 2024</p>
+    </div>
+
+    <div class="footer-center">
+
+      <div>
+            <i class="fa fa-map-marker"></i>
+            <p>
+                <a href="https://www.google.com/maps?q=Pasajero+%23620+Col.+Centro,+Salamanca,+Gto." target="_blank">
+                    <span>Pasajero #620 Col. Centro.</span> Salamanca, Gto.
+                </a>
+            </p>
+      </div>
+
+      <div>
+            <i class="fa fa-phone"></i>
+            <p> <a href="tel:464-126-11-47">464-126-11-47</a> / 
+                <a href="tel:464-64-816-28">464-64-816-28</a>
+            </p>
+      </div>
+
+      <div>
+            <i class="fa fa-envelope"></i>
+            <p> <a href="mailto:ventas@kenwood.mx">ventas@kenwood.mx</a> / 
+                <a href="mailto:ventas2@kenwood.mx">ventas2@kenwood.mx</a>
+            </p>
+      </div>
+
+    </div>
+
+    <div class="footer-right">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3735.2857944626558!2d-101.2019462!3d20.5763832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842c85067d6ddd61%3A0x260bc432ac6d02f0!2sC.%20Pasajero%20620%2C%20San%20Gonzalo%2C%2036700%20Salamanca%2C%20Gto.!5e0!3m2!1ses-419!2smx!4v1722270182983!5m2!1ses-419!2smx" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+      
+
+    </div>
+  </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+<!-- Credit to https://epicbootstrap.com/snippets/footer-with-columns -->
+
+    
+
+    <script src="radios.js"></script>
+    
+</body>
+</html>
