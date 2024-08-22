@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
     </style>
@@ -15,85 +14,50 @@
 <body>
     <!-- BARRA PRINCIPAL INFORMACION CONTACTO -->
     <header>
-        <div class="top-bar">
-            <div class="left">
-                <p><a href="https://www.google.com/maps/place/C. Pasajero 620, Centro, 36700 Salamanca, Gto."><i class="fas fa-map-marker-alt"></i> Salamanca Guanajuato, Pasajero #620 Col. Centro. C.P. 36700 </a> |  <a href="https://wa.me/524641337574"><i class="fa-brands fa-whatsapp"></i> 464-651-6344</a></p>
-            </div>
-            <div class="right">
-                <p><a href="tel:464-133-7574"><i class="fas fa-phone-alt"></i> 464-648-1628 </a> | <a href="mailto:renedejesusrangel228@gmail.com"><i class="fas fa-envelope"></i>Tafolla@incomxe.com.mx</a></p>
-            </div>
+        <div class="logo">
+            <a href="../index.html"><img src="Motorola Logo.png" alt="Logo"></a>
         </div>
-        <div class="white-line"></div>
+        <div class="menu-icon" id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
         <nav class="navbar">
-            <div class="logo"><img src="LOGO BLANCO.png" alt=""></div>
-            <div class="image-right"> 
-                <img src="logo-incomxe.png" alt="">
-            </div>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-            <!-- Menú de escritorio -->
-            <ul class="nav-links desktop-menu">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#" class="support-link" id="support-link">Support</a></li>
-                <li><a href="nosotros/index.html">Nosotros</a></li>
-                <li class="menu-item-has-children mobile-only">
-                    <a href="#">Nosotros <i class="fas fa-chevron-right"></i></a>
-                    <ul class="submenu">
-                        <li><a href="nosotros.html">¿Quienes Somos?</a></li>
-                        <li><a href="#">Our Vision</a></li>
+            <ul>
+                <li><a href="mailto:renedejesusrangel228@gmail.com">Tafolla@incomxe.com.mx <i class="fa-solid fa-envelope" style="color: #000000;"></i></a></li>
+                <li><a href="tel:464-133-7574">464-648-1628 <i class="fa-solid fa-phone" style="color: #000000;"></i></a></li>
+                <li><a href="https://wa.me/524641337574">464-651-6344 <i class="fa-brands fa-whatsapp" style="color: #000000;"></i></a></li>
+    
+                <li class="hide-in-secondary"><a href="../index.html">Menú</a></li>
+    
+                <li class="menu-item-has-children hide-in-secondary">
+                    <a href="../nosotros/index.html" id="Nosotros-link">Nosotros <i class="fa-solid fa-chevron-down" id="toggle-submenu"></i></a>
+                    <ul class="submenu">    
+                        <li><a href="nosotros.html">Quienes somos</a></li>
                     </ul>
                 </li>
-                <li class="menu-item-has-children mobile-only">
-                    <a href="#">Support <i class="fas fa-chevron-right"></i></a>
-                    <ul class="submenu">
-                        <li><a href="#">¿Necesitas Ayuda?</a></li>
-                        <li><a href="mailto:carlosdanielconejo2@gmail.com">Contacto: support@gmail.com</a></li>
+                <li class="menu-item-has-children hide-in-secondary">
+                    <a href="#" id="support-link">Support <i class="fa-solid fa-chevron-down" id="toggle-support-submenu"></i></a>
+                    <ul class="submenu">    
+                        <li><a href="#support-box">¿Necesitas ayuda?</a>
+                            <a href="mailto:carlosdanielconejo2@gmail.com">support@gmail.com</a>
+                        </li>
                     </ul>
                 </li>
-            </ul>
-            <!-- Menú de móvil -->
-            <ul class="nav-links mobile-menu">
-                <li><a href="mailto:renedejesusrangel228@gmail.com"><i class="fas fa-envelope"></i> Tafolla@incomxe.com.mx</a></li>
-                <li><a href="tel:464-133-7574"><i class="fas fa-phone-alt"></i> 464-648-1628</a></li>
-                <li><a href="https://wa.me/524641337574"><i class="fa-brands fa-whatsapp"></i> 464-651-6344</a></li>
-                
-                <li class="menu-item-has-children">
-                    <a href="#" class="no-line">Nosotros <i class="fas fa-chevron-right"></i></a>
-                    <ul class="submenu">
-                        <li><a href="nosotros/index.html">¿Quienes Somos?</a></li>
-                        <li><a href="#">Nuestra Visión</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item-has-children">
-                    <a href="#" class="no-line">Soporte <i class="fas fa-chevron-right"></i></a>
-                    <ul class="submenu">
-                        <li><a href="#">¿Necesitas Ayuda?</a></li>
-                        <li><a href="mailto:carlosdanielconejo2@gmail.com">Contacto: support@gmail.com</a></li>
-                    </ul>
-                </li>
-                <li><a href="https://www.google.com/maps/place/C. Pasajero 620, Centro, 36700 Salamanca, Gto."><i class="fa-solid fa-location-dot"></i> Salamanca Guanajuato, Pasajero #620 Col. Centro. C.P. 36700</a></li>
+                <li class="hide-in-secondary"><a href="https://www.google.com/maps/place/C. Pasajero 620, Centro, 36700 Salamanca, Gto.">Salamanca Guanajuato, Pasajero #620 Col. Centro. C.P. 36700 <i class="fa-solid fa-location-dot" style="color: #000000;"></i></a></li>
             </ul>
         </nav>
     </header>
-    <main id="home">
-        <section class="hero">
-            <div class="background"></div>
-            <div class="overlay"></div>
-            <div class="content">
-                <h1>BIENVENIDO</h1>
-                <p>Innovación y tecnología en radiocomunicación</p>
-                <div class="scroll-down">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </section>
-    </main>
 
-    
+    <!-- BARRA SECUNDARIA INFORMACION CONTACTO -->
+    <header class="secondary-header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">Menú</a></li>
+                <li><a href="../nosotros/index.html">Nosotros</a></li>
+                <li><a href="#" class="support-link" id="support-link">Support</a></li>
+                <li><a href="https://www.google.com/maps/place/C. Pasajero 620, Centro, 36700 Salamanca, Gto.">Salamanca Guanajuato, Pasajero #620 Col. Centro. C.P. 36700 <i class="fa-solid fa-location-dot" style="color: #000000;"></i></a></li>
+            </ul>
+        </nav>
+    </header>
 
     <div id="support-box" class="support-box">
         <div class="close-btn" id="close-support">X</div>
@@ -102,115 +66,37 @@
         <p><strong>Contacto:</strong> <a href="mailto:support@example.com">support@example.com</a></p>
     </div>
 
+    <!-- BARRA DE NAVEGACION (BREADCRUMB) -->
+    <div class="breadcrumb" >
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../index.html#productos">Productos</a></li>
+            <li>Radios Portátiles</li>
+        </ul>
+    </div>
 
-    <!---PARTE DE INFORMACIÓN--->
-    <div class="container animate-in">
-        <div class="row">
-            <div class="header">
-                <h1 id="about">Comunicaciónes</h1>
-                <p>Descubre cómo las soluciones de radiocomunicación de Motorola pueden transformar la manera en que te comunicas y operas.</p>
-            </div>
-            <div class="contentt">
-                <div class="card animate-in">
-                    <div class="image-container">
-                        <h4>Seguridad y Fiabilidad</h4>
-                        <img src="imagen-noticias.jpg" alt="">
-                    </div>
-                    <p>La seguridad es nuestra prioridad. Todos nuestros equipos y sistemas están diseñados para proporcionar comunicaciones seguras y encriptadas, protegiendo la integridad de la información.</p>
-                </div>
-                <div class="card animate-in">
-                    <div class="image-container">
-                    <h4>Innovación Continua</h4>
-                    <img src="IMAGEN NOTICIAS-2.jpeg" alt="">
-                </div>
-                    <p>Invertimos constantemente en investigación y desarrollo para incorporar las últimas tecnologías y mejoras, manteniéndonos a la vanguardia de la industria de radiocomunicaciones.</p>
-                </div>
-                <div class="card animate-in">
-                    <div class="image-container">
-                    <h4>Adaptabilidad y Personalización</h4>
-                    <img src="IMAGEN.NOTICIA3.jpeg" alt="">
-                </div>
-                    <p>Nos adaptamos a las necesidades específicas de cada cliente, proporcionando soluciones de comunicación personalizadas que cumplen con los requisitos de diversas industrias y aplicaciones.</p>
-                </div>
-            </div>
+    <!--  BUSCADOR -->
+    
+    <div class="content">
+        <div class="container">
+            <h1> MOTOROLA RADIOS MOVILES</h1>
+            <input type="text" id="searchBar" placeholder="Buscar radios...">
         </div>
+    </div> 
+
+    <!-- TEXTO EXPLICATIVO -->
+    <div class="description">
+        <p>Los radios Motorola son dispositivos de comunicación portátiles que permiten una comunicación instantánea y eficiente entre equipos de trabajo. Ideales para entornos industriales, de seguridad, y eventos, estos radios ofrecen durabilidad y claridad en la transmisión de voz.</p>
     </div>
 
 
-    <!---PARTE DE INFO RADIO EN MEDIO--->
-    <!---PARTE DE INFO RADIO EN MEDIO--->
-<section class="about-us animate-in">
-    <div class="info-background">
-        <h2>Explore Motorola</h2>
-        <h3>Caracteristicas principales de Motorola</h3>
-        <div class="content-2">
-            <div class="story">
-                <h4>Ecosistema de seguridad y protección.</h4>
-                <p>Conectamos tecnologías para ayudar a proteger personas, propiedades y lugares, permitiendo una colaboración crítica entre la seguridad pública y las empresas para un enfoque proactivo de la seguridad y la protección.</p>
-                <p><br>Creamos redes que realmente funcionan en las condiciones más duras, para que pueda mantenerse conectado y comunicarse con claridad.</p>
-                <a href="RADIOS MOVILES/index.html"><button class="btn-dark">Leer Más</button></a>
-            </div>
-            <img src="MOTOTRBO R2(2).png" alt="Radio Image" class="center-image">
-            <div class="vision">
-                <h4>Diseño probado para su entorno:</h4>
-                <p>Tanto en una planta industrial como en un edificio en llamas, nuestros equipos y sistemas de radiocomunicación están elaborados para garantizar su conexión continua en todo momento.</p>
-                <ul>
-                    <li>Al aire libre o en un entorno hostil, nuestros dispositivos evitan la entrada de polvo y lo mantienen conectado.</li>
-                    <li>Gracias a la robusta construcción del dispositivo, las caídas no lo dejarán desconectado.</li>
-                    <li>Salpicaduras, lluvia torrencial o bebida derramada: nuestros dispositivos pueden mojarse y seguir funcionando.</li>
-                </ul>
-                <a href="RADIOS PORTATILES/index.html"><button class="btn-dark">Leer Más</button></a>
-            </div>
-        </div>
+    <!-- LISTA DE RADIOS -->
+    <div class="containerr" id="radioContainer">
+        <!-- Radios will be dynamically inserted here -->
     </div>
-</section>
-
     
 
-   
-
-    <!---Parte de Apartados--->
-    <h1 class="heading animate-in" id="productos" style="color: #446280;">Productos <i class="fa-regular fa-walkie-talkie" style="color: #000000;"></i></h1>
-    <div class="services animate-in">
-        <div class="service">
-            <div class="overlay">
-                <img src="FONDO IMAGEN.jpeg" alt="Radio Portatil">
-            </div>
-
-            <div class="contents">
-                <h2>RADIOS PORTATILES</h2>
-                <p>Descubre los grandes modelos de radios portatiles de motorola.</p>
-                <a href="RADIOS PORTATILES/index.html"><h3>Más información</h3></a>
-            </div>
-
-            <div class="indicators">
-                <div class="indicator active" id="image-indicator-1"></div>
-                <div class="indicator" id="text-indicator-1"></div>
-            </div>
-        </div>
-
-        <div class="service">
-            <img src="radio-motorola.jpeg" alt="Radio Movil">
-            <div class="contents">
-                <h2>RADIOS MOVILES</h2>
-                <p>Descubre los grandes modelos de radios moviles de motorola.</p>
-                <a href="RADIOS MOVILES/index.html"><h3>Más información</h3></a>
-            </div>
-
-            <div class="indicators">
-                <div class="indicator active" id="image-indicator-2"></div>
-                <div class="indicator" id="text-indicator-2"></div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-    
-
-
-   <!-- RECUADRO FINAL  -->
+    <!-- RECUADRO FINAL  -->
 
   
 
@@ -272,22 +158,11 @@
 
     </div>
   </footer>
-
-
-  <button class="scroll-to-top" id="scrollToTopBtn">
-    <i class="fas fa-chevron-up"></i>
-</button>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
 <!-- Credit to https://epicbootstrap.com/snippets/footer-with-columns -->
-    <script src="script.js"></script>
 
-    <script></script>
-   
+    <script src="script.js"></script>
 </body>
 </html>
