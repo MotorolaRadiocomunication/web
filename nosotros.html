@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motorola Radiocomunication</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="nosotros.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+    </style>
+</head>
+<body>
+    <!-- BARRA PRINCIPAL INFORMACION CONTACTO -->
+    <header>
+        <div class="logo">
+           <a href="index.html"><img src="Motorola Logo.png" alt="Logo"></a>
+        </div>
+        <div class="menu-icon" id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="mailto:renedejesusrangel228@gmail.com">Tafolla@incomxe.com.mx <i class="fa-solid fa-envelope" style="color: #000000;"></i></a></li>
+                <li><a href="tel:464-133-7574">464-648-1628 <i class="fa-solid fa-phone" style="color: #000000;"></i></a></li>
+                <li><a href="https://wa.me/524641337574">464-651-6344 <i class="fa-brands fa-whatsapp" style="color: #000000;"></i></a></li>
+    
+                <li class="hide-in-secondary"><a href="#">Menú</a></li>
+    
+                <li class="menu-item-has-children hide-in-secondary">
+                    <a href="#" id="Nosotros-link">Nosotros <i class="fa-solid fa-chevron-down" id="toggle-submenu"></i></a>
+                    <ul class="submenu">    
+                        <li><a href="nosotros.html">Quienes somos</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children hide-in-secondary">
+                    <a href="#" id="support-link">Support <i class="fa-solid fa-chevron-down" id="toggle-support-submenu"></i></a>
+                    <ul class="submenu">    
+                        <li><a href="#support-box">¿Necesitas ayuda?</a>
+                            <a href="mailto:carlosdanielconejo2@gmail.com">support@gmail.com</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="hide-in-secondary"><a href="https://www.google.com/maps/place/C. Pasajero 620, Centro, 36700 Salamanca, Gto.">Salamanca Guanajuato, Pasajero #620 Col. Centro. C.P. 36700 <i class="fa-solid fa-location-dot" style="color: #000000;"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- BARRA SECUNDARIA INFORMACION CONTACTO -->
+    <header class="secondary-header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Menú</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#" class="support-link" id="support-link">Support</a></li>
+                <li><a href="https://www.google.com/maps/place/C. Pasajero 620, Centro, 36700 Salamanca, Gto.">Salamanca Guanajuato, Pasajero #620 Col. Centro. C.P. 36700 <i class="fa-solid fa-location-dot" style="color: #000000;"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="support-box" class="support-box">
+        <div class="close-btn" id="close-support">X</div>
+        <h3>¿Necesitas ayuda?</h3>
+        <p>Estamos aquí para asistirte. Contacta con nuestro equipo de soporte para obtener ayuda.</p>
+        <p><strong>Contacto:</strong> <a href="mailto:support@example.com">support@example.com</a></p>
+    </div>
+
+    <!-- BARRA DE NAVEGACION (BREADCRUMB) -->
+    <div class="breadcrumb" >
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+        </ul>
+    </div>
+
+    <!-- SCROLL -->
+    <div class="slide">
+        <div class="slide-inner">
+            <input class="slide-open" type="radio" id="slide-1" 
+                  name="slide" aria-hidden="true" hidden="" checked="checked">
+            <div class="slide-item">
+                <img src="FONDO-2.jpg">
+            </div>
+            <input class="slide-open" type="radio" id="slide-2" 
+                  name="slide" aria-hidden="true" hidden="">
+            <div class="slide-item">
+                <img src="FONDO-3.jpg">
+            </div>
+            <input class="slide-open" type="radio" id="slide-3" 
+                  name="slide" aria-hidden="true" hidden="">
+            <div class="slide-item">
+                <img src="FONDO-4.jpeg">
+            </div>
+            <label for="slide-3" class="slide-control prev control-1">‹</label>
+            <label for="slide-2" class="slide-control next control-1">›</label>
+            <label for="slide-1" class="slide-control prev control-2">‹</label>
+            <label for="slide-3" class="slide-control next control-2">›</label>
+            <label for="slide-2" class="slide-control prev control-3">‹</label>
+            <label for="slide-1" class="slide-control next control-3">›</label>
+            <ol class="slide-indicador">
+                <li>
+                    <label for="slide-1" class="slide-circulo">•</label>
+                </li>
+                <li>
+                    <label for="slide-2" class="slide-circulo">•</label>
+                </li>
+                <li>
+                    <label for="slide-3" class="slide-circulo">•</label>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+
+
+
+    <section class="page-section">
+		<div class="container">
+			 <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <h3>Our history</h3>
+                    <p class="lead">Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem!</p>
+                </div>
+            </div><!-- end title -->
+			<div class="timeline">
+				<div class="timeline__wrap">
+					<div class="timeline__items">
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-01">
+								<h2>2018</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus. Lorem
+									ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-02">
+								<h2>2015</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-03">
+								<h2>2014</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-04">
+								<h2>2012</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-01">
+								<h2>2010</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus. Lorem
+									ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-02">
+								<h2>2007</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-03">
+								<h2>2004</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-04">
+								<h2>2002</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+    <!-- ALL JS FILES -->
+    
+    <!-- ALL PLUGINS -->
+    
+	<script src="nosotros.js"></script>
+    <script src="timeline.min.js"></script>
+	<script>
+		timeline(document.querySelectorAll('.timeline'), {
+			forceVerticalMode: 700,
+			mode: 'horizontal',
+			verticalStartPosition: 'left',
+			visibleItems: 4
+		});
+	</script>
+    
